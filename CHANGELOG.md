@@ -35,6 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Add fetch phase profiling. ([#18664](https://github.com/opensearch-project/OpenSearch/pull/18664))
 - Include named queries from rescore contexts in matched_queries array ([#18697](https://github.com/opensearch-project/OpenSearch/pull/18697))
 - Add the configurable limit on rule cardinality ([#18663](https://github.com/opensearch-project/OpenSearch/pull/18663))
+- Optimization in Numeric Terms Aggregation query for Large Bucket Counts([#18702](https://github.com/opensearch-project/OpenSearch/pull/18702))
 - Disable approximation framework when dealing with multiple sorts ([#18763](https://github.com/opensearch-project/OpenSearch/pull/18763))
 - [Experimental] Start in "clusterless" mode if a clusterless ClusterPlugin is loaded ([#18479](https://github.com/opensearch-project/OpenSearch/pull/18479))
 - [Star-Tree] Add star-tree search related stats ([#18707](https://github.com/opensearch-project/OpenSearch/pull/18707))
@@ -86,7 +87,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Bump `com.squareup.okhttp3:okhttp` from 4.12.0 to 5.1.0 ([#18749](https://github.com/opensearch-project/OpenSearch/pull/18749))
 - Bump `com.google.jimfs:jimfs` from 1.3.0 to 1.3.1 ([#18743](https://github.com/opensearch-project/OpenSearch/pull/18743)), [#18746](https://github.com/opensearch-project/OpenSearch/pull/18746)), [#18748](https://github.com/opensearch-project/OpenSearch/pull/18748))
 - Bump `com.azure:azure-storage-common` from 12.29.0 to 12.29.1 ([#18742](https://github.com/opensearch-project/OpenSearch/pull/18742))
-- Bump `org.apache.commons:commons-lang3` from 3.17.0 to 3.18.0 ([#18745](https://github.com/opensearch-project/OpenSearch/pull/18745))
+- Bump `org.apache.commons:commons-lang3` from 3.17.0 to 3.18.0 ([#18745](https://github.com/opensearch-project/OpenSearch/pull/18745)), ([#18955](https://github.com/opensearch-project/OpenSearch/pull/18955))
 - Bump `com.nimbusds:nimbus-jose-jwt` from 10.2 to 10.4 ([#18759](https://github.com/opensearch-project/OpenSearch/pull/18759), [#18804](https://github.com/opensearch-project/OpenSearch/pull/18804))
 - Bump `commons-beanutils:commons-beanutils` from 1.9.4 to 1.11.0 ([#18401](https://github.com/opensearch-project/OpenSearch/issues/18401))
 - Bump `org.xerial.snappy:snappy-java` from 1.1.10.7 to 1.1.10.8 ([#18803](https://github.com/opensearch-project/OpenSearch/pull/18803))
@@ -120,6 +121,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Fix socks5 user password settings for Azure repo ([#18904](https://github.com/opensearch-project/OpenSearch/pull/18904))
 - Fix gRPC transport SETTING_GRPC_MAX_MSG_SIZE setting not exposed to users ([#18910](https://github.com/opensearch-project/OpenSearch/pull/18910))
 - Reset isPipelineResolved to false to resolve the system ingest pipeline again. ([#18911](https://github.com/opensearch-project/OpenSearch/pull/18911))
+- Bug fix for `scaled_float` in `encodePoint` method ([#18952](https://github.com/opensearch-project/OpenSearch/pull/18952))
 
 ### Security
 
